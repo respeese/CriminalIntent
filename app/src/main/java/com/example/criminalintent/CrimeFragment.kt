@@ -94,6 +94,12 @@ class CrimeFragment : Fragment() {
         }
     }
 
+    //Write crime details user entered to DB when user navigates away from screen
+    override fun onStop() {
+        super.onStop()
+        crimeDetailViewModel.saveCrime(crime)
+    }
+
     private fun updateUI() {
         titleField.setText(crime.title)
         dateButton.text = crime.date.toString()
