@@ -27,7 +27,7 @@ crime's details.
 
 ## Video Demo
 
-<img src='https://github.com/respeese/HelloSquirrel/blob/main/Project%201.gif' title='Video Demo' width='240' alt='Video Demo' />
+<img src='https://github.com/respeese/CriminalIntent/blob/master/CriminalIntentDemo.gif' title='Video Demo' width='240' alt='Video Demo' />
 
 ## Notes
 
