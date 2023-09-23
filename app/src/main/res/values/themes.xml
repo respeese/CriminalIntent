@@ -8,6 +8,8 @@
         <item name="android:navigationBarColor">@color/light_green</item>
         <item name="android:textColorPrimary">@color/black</item>
         <item name="toolbarStyle">@style/Theme.Custom.Toolbar</item>
+        <item name="android:textViewStyle">@style/RobotoTextViewStyle</item>
+        <item name="android:buttonStyle">@style/RobotoButtonStyle</item>
     </style>
 
     <style name="Theme.CriminalIntent" parent="Base.Theme.CriminalIntent" />
@@ -15,6 +17,14 @@
     <style name="Theme.Custom.Toolbar" parent="Widget.Material3.ActionBar.Solid">
         <item name="android:background">@color/green</item>
         <item name="titleTextColor">@color/white</item>
+    </style>
+
+    <style name="RobotoTextViewStyle" parent="android:Widget.TextView">
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+
+    <style name="RobotoButtonStyle" parent="android:Widget.Holo.Button">
+        <item name="android:fontFamily">sans-serif</item>
     </style>
 
 </resources>

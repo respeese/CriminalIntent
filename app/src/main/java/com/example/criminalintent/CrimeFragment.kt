@@ -15,6 +15,7 @@ import androidx.annotation.RequiresApi
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
+import java.text.DateFormat
 import java.util.Date
 import java.util.UUID
 
@@ -114,7 +115,7 @@ class CrimeFragment : Fragment(), DatePickerFragment.Callbacks {
 
     private fun updateUI() {
         titleField.setText(crime.title)
-        dateButton.text = crime.date.toString()
+        dateButton.text = DateFormat.getDateInstance(DateFormat.MEDIUM).format(crime.date)
         solvedCheckBox.apply{
             isChecked = crime.isSolved
             jumpDrawablesToCurrentState() //skip checkbox animation
